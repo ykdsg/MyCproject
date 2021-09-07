@@ -1,0 +1,5 @@
+/Users/ykdsg/my_workspace/MyCproject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ykdsg/my_workspace/MyCproject/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ykdsg/my_workspace/MyCproject/cmake-build-debug/CMakeFiles/point.dir
+/Users/ykdsg/my_workspace/MyCproject/cmake-build-debug/CMakeFiles/main.dir
+/Users/ykdsg/my_workspace/MyCproject/cmake-build-debug/CMakeFiles/change.dir
