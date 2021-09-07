@@ -1,7 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/ykdsg/my_workspace/MyCproject
-    -- src/change.c will be compiled to bin/change
-    -- src/main.c will be compiled to bin/main
-    -- src/point.c will be compiled to bin/point
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/ykdsg/my_workspace/MyCproject/cmake-build-debug
