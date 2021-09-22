@@ -31,5 +31,10 @@ int main() {
     printf("ai-- %p\n", &ai);
     printf("ai-- %p\n", &ai[0]);
     printf("ai-- %p\n", &ai[1]);
+
+    // char的位数比int 小，会直接丢弃掉多的部分
+    int testi = 32769;
+    char testc = i;
+    printf("test char %d\n",testc);
     return 0;
 }
