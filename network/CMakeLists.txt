@@ -33,4 +33,5 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR}/include)
 add_subdirectory(lib/)
 add_subdirectory(ch04/)
 add_subdirectory(ch05/)
+add_subdirectory(ch06/)
 

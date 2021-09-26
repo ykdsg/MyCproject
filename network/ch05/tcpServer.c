@@ -31,7 +31,7 @@ int main(){
     listen(listenfd, 1024);
     for (;;) {
         clilen = sizeof(cliaddr);
-//        cliadd是通过指针方式获取的客户端的地址，addrlen告诉我们地址的大小
+//        cliaddr是通过指针方式获取的客户端的地址，addrlen告诉我们地址的大小
 //      connfd描述字，代表了与客户端的连接
         connfd = accept(listenfd, (struct sockaddr *)&cliaddr, &clilen);
         /* 读取数据 */
