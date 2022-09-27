@@ -11,6 +11,7 @@ int main(int argc, char **argv) {
     }
 
     int socket_fd;
+//    创建的本地套接字，这里创建的套接字类型，注意是 AF_LOCAL，协议类型为 SOCK_DGRAM
     socket_fd = socket(AF_LOCAL, SOCK_DGRAM, 0);
     if (socket_fd < 0) {
         error(1, errno, "socket create failed");

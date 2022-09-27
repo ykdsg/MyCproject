@@ -6,11 +6,18 @@
 
 void f(int *p);
 
+void g(int i);
+
 int main(){
+
+
     int i = 6;
     int j = 8;
+//    可以看到i跟j的地址相差4个字节，说明在内存中他们是紧挨着放的
     printf("&i=%p\n", &i);
+    printf("&j=%p\n", &j);
     f(&i);
+    g(i);
 
 
 
@@ -29,7 +36,14 @@ int main(){
     return 0;
 }
 
+
 void f(int *p){
     printf("*p=%d\n", *p); //打印的是i的内容，6
     printf("p=%p\n", p);//打印的是i的地址
+    *p = 26;
+}
+
+
+void g(int k) {
+    printf("k=%d\n", k);
 }

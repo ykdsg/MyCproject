@@ -1,0 +1,1 @@
+add_executable(namespaceTest namespaceTest.c)
