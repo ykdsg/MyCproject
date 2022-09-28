@@ -14,6 +14,8 @@ static void recvfrom_int(int signo) {
 int main(){
     int socket_fd;
     socket_fd = socket(AF_INET, SOCK_DGRAM, 0);
+//  如果设置错了，程序不会报错，但是会一直打印 received -1 bytes:
+//    socket_fd = socket(AF_INET, SOCK_STREAM, 0);
 
     struct sockaddr_in server_addr;
     bzero(&server_addr, sizeof(server_addr));

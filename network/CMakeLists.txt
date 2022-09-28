@@ -30,6 +30,14 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config.h.cmake
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR}/include)
 
+#file (GLOB_RECURSE files *.c)
+#foreach (file ${files})
+#    string(REGEX REPLACE ".+/(.+)\\..*" "\\1" exe ${file})
+#    add_executable (${exe} ${file})
+#    message (\ \ \ \ --\ src/${exe}.c\ will\ be\ compiled\ to\ bin/${exe})
+#endforeach ()
+
+
 add_subdirectory(lib/)
 add_subdirectory(ch04/)
 add_subdirectory(ch05/)
