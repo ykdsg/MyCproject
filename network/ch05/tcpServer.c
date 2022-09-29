@@ -21,9 +21,9 @@ int main(){
 
 //    可以把地址设置成本机的IP地址，这相当告诉操作系统内核，仅仅对目标IP是本机IP地址的IP包进行处理
 //通配地址相当于告诉操作系统内核，我可不挑活，只要目标地址是咱们的都可以。
-//htons和htonl函数，是用来将主机字节顺序转换为网络字节顺序
-//    htonl 是针对32位，4个字节而言
-//    htons 是针对16位，2个字节而言
+//htons和htonl函数，是用来将主机字节顺序（一般是小端序）转换为网络字节顺序（一般是大端序），
+//    htonl 是针对32位，4个字节而言 host to network long
+//    htons 是针对16位，2个字节而言 host to network short
     servaddr.sin_addr.s_addr = htonl(INADDR_ANY);/* IPV4通配地址 */
     servaddr.sin_port        = htons(12345);
 
