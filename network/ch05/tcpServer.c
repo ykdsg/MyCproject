@@ -25,7 +25,7 @@ int main(){
 //    htonl 是针对32位，4个字节而言 host to network long
 //    htons 是针对16位，2个字节而言 host to network short
     servaddr.sin_addr.s_addr = htonl(INADDR_ANY);/* IPV4通配地址 */
-    servaddr.sin_port        = htons(12345);
+    servaddr.sin_port        = htons(SERV_PORT);
 
     /* bind到本地地址，端口为12345 */
     bind(listenfd, (struct sockaddr *) &servaddr, sizeof(servaddr));
